@@ -13,18 +13,25 @@ AI agent usage guides for kyungw00k CLI tools.
 
 ## Install
 
-Add the marketplace and enable the plugin:
+In Claude Code, add the marketplace and install the plugin:
 
-```bash
-claude /install kyungw00k-skills
+```
+/plugin marketplace add kyungw00k/skills
+/plugin install cli-tools@kyungw00k-skills
 ```
 
-Or manually add to your Claude Code settings:
+Or manually add to your `~/.claude/settings.json`:
 
 ```json
 {
-  "permissions": {
-    "additionalMarketplaces": ["kyungw00k/skills"]
+  "extraKnownMarketplaces": {
+    "kyungw00k-skills": {
+      "source": {
+        "source": "github",
+        "repo": "kyungw00k/skills"
+      },
+      "autoUpdate": true
+    }
   }
 }
 ```
