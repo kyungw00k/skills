@@ -1,0 +1,22 @@
+{
+  "name": "kyungw00k-skills",
+  "owner": {
+    "name": "kyungw00k"
+  },
+  "metadata": {
+    "description": "AI agent usage guides for kyungw00k CLI tools"
+  },
+  "plugins": [
+    {
+      "name": "cli-tools",
+      "description": "AI agent usage guides for kyungw00k public CLI tools — juso, upbit, stealth-wright, apkpure",
+      "source": "./",
+      "skills": [
+        "./skills/juso",
+        "./skills/upbit",
+        "./skills/stealth-wright",
+        "./skills/apkpure"
+      ]
+    }
+  ]
+}
